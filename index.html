@@ -855,9 +855,9 @@
         </div>
 
         <div class="actions">
-          <a href="#" class="btn" onclick="window.print(); return false;">
-            <span>🖨️</span>
-            <span>Print / Save PDF</span>
+          <a href="#" class="btn" onclick="saveToPDF(); return false;">
+            <span>📄</span>
+            <span>Save as PDF</span>
           </a>
           <a href="mailto:mayco.rmz@gmail.com" class="btn btn-secondary">
             <span>✉️</span>
@@ -1004,5 +1004,36 @@
       </div>
     </section>
   </div>
+  <script>
+    function saveToPDF() {
+      // Store original title
+      const originalTitle = document.title;
+      
+      // Set PDF filename
+      document.title = 'Miguel_G_Ramirez_Resume';
+      
+      // Trigger the browser's print dialog which allows saving as PDF
+      window.print();
+      
+      // Restore original title after a brief delay
+      setTimeout(() => {
+        document.title = originalTitle;
+      }, 1000);
+    }
+
+    // Enhanced print preparation
+    window.addEventListener('beforeprint', function() {
+      // Ensure all content is visible and properly formatted
+      document.body.style.visibility = 'visible';
+      
+      // Force reflow to ensure layout is complete
+      document.body.offsetHeight;
+    });
+
+    window.addEventListener('afterprint', function() {
+      // Clean up after printing
+      document.body.style.visibility = '';
+    });
+  </script>
 </body>
 </html>
