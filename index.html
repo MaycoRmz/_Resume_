@@ -524,108 +524,132 @@
       }
 
       body {
-        background: white;
-        font-size: 11px;
-        line-height: 1.3;
+        background: white !important;
+        color: black !important;
+        font-size: 10px;
+        line-height: 1.2;
       }
 
       .bg-animation,
       .floating-shapes {
-        display: none;
+        display: none !important;
       }
 
       .container {
-        max-width: none;
-        padding: 0;
-        margin: 0;
+        max-width: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        box-shadow: none !important;
       }
 
       .header {
-        padding: 1rem;
-        margin-bottom: 1rem;
-        border-radius: 0;
-        box-shadow: none;
-        border-bottom: 2px solid var(--primary-blue);
+        padding: 0.5rem 0 !important;
+        margin-bottom: 0.5rem !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        border-bottom: 2px solid #2563eb !important;
+        background: white !important;
       }
 
       .header::before {
-        display: none;
+        display: none !important;
       }
 
       .name {
-        font-size: 1.8rem;
-        margin-bottom: 0.25rem;
-        color: var(--text-dark) !important;
-        -webkit-text-fill-color: var(--text-dark) !important;
+        font-size: 1.6rem !important;
+        margin-bottom: 0.2rem !important;
+        color: black !important;
+        background: none !important;
+        -webkit-text-fill-color: black !important;
+        text-fill-color: black !important;
       }
 
       .title {
-        font-size: 1rem;
-        margin-bottom: 0.5rem;
+        font-size: 0.9rem !important;
+        margin-bottom: 0.3rem !important;
+        color: black !important;
+        opacity: 1 !important;
       }
 
       .contact-info {
-        flex-direction: row;
-        gap: 1rem;
-        font-size: 0.85rem;
-        margin-bottom: 0;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        gap: 1rem !important;
+        font-size: 0.8rem !important;
+        margin-bottom: 0 !important;
+        color: black !important;
+        opacity: 1 !important;
+      }
+
+      .contact-item {
+        color: black !important;
+      }
+
+      .contact-item a {
+        color: black !important;
+        text-decoration: underline;
       }
 
       .actions {
-        display: none;
+        display: none !important;
       }
 
       .main-content {
-        display: block;
-        margin-bottom: 0;
+        display: block !important;
+        margin-bottom: 0 !important;
       }
 
       .section {
-        box-shadow: none;
-        border: none;
-        border-radius: 0;
-        padding: 0.75rem 0;
-        margin-bottom: 0.75rem;
-        break-inside: avoid;
+        display: block !important;
+        box-shadow: none !important;
+        border: none !important;
+        border-radius: 0 !important;
+        padding: 0.3rem 0 !important;
+        margin-bottom: 0.5rem !important;
+        background: white !important;
+        opacity: 1 !important;
+        transform: none !important;
         page-break-inside: avoid;
-        background: white;
       }
 
       .section-title {
-        font-size: 1.1rem;
-        margin-bottom: 0.5rem;
-        padding-bottom: 0.25rem;
-        border-bottom: 1px solid var(--primary-blue);
+        font-size: 1rem !important;
+        margin-bottom: 0.3rem !important;
+        padding-bottom: 0.2rem !important;
+        border-bottom: 1px solid #2563eb !important;
+        color: black !important;
+        font-weight: 600 !important;
       }
 
       .section-title::after {
-        display: none;
+        display: none !important;
       }
 
-      /* Compact layout for print */
-      .full-width:first-of-type {
-        margin-bottom: 0.5rem;
-      }
-
-      .full-width:first-of-type p {
-        font-size: 0.9rem;
-        margin: 0;
+      /* Executive Profile */
+      .section:first-child p {
+        font-size: 0.85rem !important;
+        margin: 0 !important;
         text-align: justify;
+        color: black !important;
+        line-height: 1.3 !important;
       }
 
-      /* Skills in compact rows */
+      /* Skills as inline text */
       .skills-grid {
-        display: block;
-        font-size: 0.85rem;
-        line-height: 1.4;
+        display: block !important;
+        font-size: 0.8rem !important;
+        line-height: 1.3 !important;
+        color: black !important;
       }
 
       .skill-item {
-        display: inline;
-        background: none;
-        padding: 0;
-        margin: 0;
-        border-radius: 0;
+        display: inline !important;
+        background: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border-radius: 0 !important;
+        color: black !important;
       }
 
       .skill-item::after {
@@ -636,110 +660,124 @@
         content: "";
       }
 
-      /* Compact experience section */
+      /* Experience section */
       .job {
-        margin-bottom: 0.75rem;
-        padding: 0.5rem 0;
-        background: none;
-        border-left: 2px solid var(--primary-blue);
-        padding-left: 0.75rem;
+        margin-bottom: 0.4rem !important;
+        padding: 0.2rem 0 0.2rem 0.5rem !important;
+        background: none !important;
+        border-left: 2px solid #2563eb !important;
+        page-break-inside: avoid;
       }
 
       .job::before {
-        display: none;
+        display: none !important;
       }
 
       .job-header {
-        margin-bottom: 0.25rem;
-        flex-direction: column;
-        gap: 0;
+        margin-bottom: 0.1rem !important;
+        display: block !important;
       }
 
       .job-title {
-        font-size: 0.95rem;
-        font-weight: 600;
+        font-size: 0.9rem !important;
+        font-weight: 600 !important;
+        color: black !important;
+        margin-bottom: 0.1rem !important;
       }
 
       .job-period {
-        font-size: 0.8rem;
-        background: none;
-        color: var(--text-medium);
-        padding: 0;
+        font-size: 0.75rem !important;
+        background: none !important;
+        color: #666 !important;
+        padding: 0 !important;
         font-style: italic;
       }
 
       .job ul {
-        margin: 0.25rem 0 0 0;
+        margin: 0.2rem 0 0 1rem !important;
+        padding: 0 !important;
+        list-style: none !important;
       }
 
       .job li {
-        font-size: 0.85rem;
-        margin-bottom: 0.15rem;
-        line-height: 1.2;
+        font-size: 0.8rem !important;
+        margin-bottom: 0.1rem !important;
+        line-height: 1.2 !important;
+        color: black !important;
+        position: relative;
+        padding-left: 1rem !important;
       }
 
       .job li::before {
-        content: "▸";
-        font-size: 0.7rem;
+        content: "•" !important;
+        position: absolute;
+        left: 0 !important;
+        color: #2563eb !important;
+        font-weight: bold;
       }
 
-      /* Compact certifications */
+      /* Previous experience paragraph */
+      .section p strong {
+        color: black !important;
+        font-weight: 600 !important;
+      }
+
+      /* Certifications */
       .cert-item {
-        background: none;
-        padding: 0.25rem 0;
-        margin-bottom: 0.5rem;
-        border-left: 2px solid var(--accent-cyan);
-        padding-left: 0.5rem;
-      }
-
-      .cert-title {
-        font-size: 0.9rem;
-        margin-bottom: 0.1rem;
-      }
-
-      .cert-details {
-        font-size: 0.8rem;
-        line-height: 1.2;
-      }
-
-      /* Two-column layout for certifications and skills sections */
-      .print-two-column {
-        column-count: 2;
-        column-gap: 1.5rem;
-        column-fill: balance;
-      }
-
-      .cert-item {
-        break-inside: avoid;
+        background: none !important;
+        padding: 0.2rem 0 0.2rem 0.5rem !important;
+        margin-bottom: 0.3rem !important;
+        border-left: 2px solid #06b6d4 !important;
         page-break-inside: avoid;
       }
 
-      /* Hide decorative elements */
+      .cert-title {
+        font-size: 0.85rem !important;
+        margin-bottom: 0.1rem !important;
+        color: black !important;
+        font-weight: 600 !important;
+      }
+
+      .cert-details {
+        font-size: 0.75rem !important;
+        line-height: 1.2 !important;
+        color: #666 !important;
+      }
+
+      /* Remove all animations and transforms */
+      * {
+        animation: none !important;
+        transform: none !important;
+        transition: none !important;
+      }
+
+      /* Ensure visibility */
+      .section,
+      .job,
+      .cert-item,
+      p,
+      ul,
+      li {
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: block !important;
+      }
+
+      .skills-grid .skill-item {
+        display: inline !important;
+      }
+
+      .contact-info {
+        display: flex !important;
+      }
+
+      .contact-item {
+        display: flex !important;
+      }
+
+      /* Hide emoji icons in print */
       .contact-item span:first-child {
         display: none;
-      }
-
-      /* Ensure single page */
-      .container {
-        height: auto;
-        overflow: visible;
-      }
-
-      /* Compress vertical spacing */
-      * {
-        margin-bottom: 0 !important;
-      }
-
-      .section {
-        margin-bottom: 0.5rem !important;
-      }
-
-      .job {
-        margin-bottom: 0.5rem !important;
-      }
-
-      .cert-item {
-        margin-bottom: 0.3rem !important;
       }
     }
 
